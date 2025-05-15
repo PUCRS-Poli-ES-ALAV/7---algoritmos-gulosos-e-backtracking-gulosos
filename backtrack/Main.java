@@ -49,7 +49,7 @@ public class Main {
         // System.out.println("Menor quantidade de moedas --> " + troco.size());
         // System.out.println("Moedas utilizadas --> " + troco);
 
-        final int NRainhas = 32;
+        final int NRainhas = 8;
 
          
 
