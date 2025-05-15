@@ -2,18 +2,20 @@ package backtrack;
 public class nRainhas {
 
     public static int[][] NRainhas(int NRainhas){
+
+        for (int i = 0; i<NRainhas; i++ ){
+            for(int j = 0; j<NRainhas; j++){
+                tabuleiro[i][j] = 0;
+            }  
+        }
         calculaNRainhas(tabuleiro,0, NRainhas );
         return tabuleiro;         
     }
 
-    public static int tabuleiro[][] = { { 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0 },
-                 };
+    public static int tabuleiro[][];
+
+
+    
 
     // function to check whether the position is safe or not 
     static boolean ehSeguro(int [][]board, int row, int col)
